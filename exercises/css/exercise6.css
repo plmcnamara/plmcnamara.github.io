@@ -36,16 +36,20 @@ hr {
 
 a:link {
     color: #5278bf;
+    text-decoration: underline;
 }
 
 a:visited {
     color: #2d333a;
+    text-decoration: underline;
 }
 
 a:hover {
     color: #3a5d9c;
+    text-decoration: underline;
 }
 
 a:active {
     color:#5278bf;
+    text-decoration: underline;
 }
