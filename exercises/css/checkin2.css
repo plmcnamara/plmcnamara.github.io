@@ -61,10 +61,11 @@ footer {
 }
 
 a:link {
-    color: #2fb64c;
+    color: #008000;
+    font-weight: bold;
 }
 
 a:visited {
-    color: green;
+    color: #016c01;
+    font-weight: bold;
 }
-
