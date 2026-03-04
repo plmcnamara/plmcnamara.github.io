@@ -39,11 +39,22 @@ p {
     color: black;
 }
 
+figure {
+    display: table;
+}
+
 img {
     border: 2px #3d251e solid;
-    margin: .65rem;
     max-width: 100%;
     height: auto;
+    display: block;
+}
+
+figcaption {
+    background-color: #3d251e;;
+    color: #d8cbc4;
+    display: table-caption;
+    caption-side: bottom;
 }
 
 hr {
@@ -61,11 +72,9 @@ footer {
 }
 
 a:link {
-    color: #008000;
-    font-weight: bold;
+    color: #8AFF8A;
 }
 
 a:visited {
-    color: #016c01;
-    font-weight: bold;
+    color: #00D600;
 }
