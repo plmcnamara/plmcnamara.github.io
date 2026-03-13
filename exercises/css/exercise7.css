@@ -2,6 +2,17 @@ header {
     background-color: black;
     color: white;
     padding: 2rem;
+    text-align: right;
+}
+
+h2.logo {
+    background-color: #3a5d9c;
+    text-align: center;
+    height: 6rem;
+    width: 6rem;
+    display: grid;
+    align-items: center;
+    border-radius: 50%;
 }
 
 body {
@@ -10,11 +21,17 @@ body {
 }
 
 main {
-    border: 3px solid red;
+    border: 0px solid red;
 }
 
 h1 {
     text-align: center;
+}
+
+.wrapper {
+    border: 0px black solid;
+    margin: 0 auto;
+    max-width: 40rem;
 }
 
 article {
@@ -31,4 +48,40 @@ footer {
     color: white;
     padding: 1rem;
     text-align: center;
+}
+
+a:link {
+    color: #5278bf;
+}
+
+a:visited {
+    color: #2d333a;
+}
+
+a:hover {
+    color: #3a5d9c;
+}
+
+a:active {
+    color: #9fb9eb;
+}
+
+header a:link {
+    color: white;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+header a:active {
+    color: white;
+    text-decoration: underline;
 }
