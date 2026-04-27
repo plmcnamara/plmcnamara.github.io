@@ -5,6 +5,17 @@ body {
     background-color: #f0ead6;
 }
 
+footer {
+    background-color: #2e4a7d;
+    color: #F0EAD6;
+    
+    bottom: 0;
+    
+    padding: 1rem;
+    text-align: center;
+}
+
+
 .images {
     max-width: 100%;
     height: auto;
@@ -12,8 +23,6 @@ body {
 }
 
 .heading {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
     background-color: #3a5d9c;
     color: #F0EAD6;
     display: grid;
@@ -29,7 +38,13 @@ body {
     color: #F0EAD6;
 }
 
+.top-h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
 /* Navbar */
+/* NOTE: My code built upon the code from W3 Schools' navbar tutorial.*/
 
 .navbar {
   overflow: hidden;
@@ -118,21 +133,55 @@ body {
 #home-wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 5rem 3.5rem 1fr;
+    grid-template-rows: 5rem 3.5rem 23rem 1fr;
+}
+
+#home-heading {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#home-navbar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#hero-image {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    background-image: url(../../images/hero-image\(1600w\).jpg);
+    background-size: cover;
 }
 
 #home-main {
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
     grid-template-rows: auto;
 }
 
-#home-work-example {
+#home-about {
     grid-column: 1 / 2;
-    grid-row: auto;
+    grid-row: 4 / 5;
     margin: 1rem;
+}
+
+#home-about-photo {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border: #2e4a7d solid 2px;
+}
+
+#home-work-example {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin: 0.75rem;
     padding: 1rem;
     background-color: #d4ddef;
     border: solid #2e4a7d 2px;
@@ -150,26 +199,10 @@ body {
     place-content: center;
 }
 
-#home-about {
-    grid-column: 2 / 3;
-    grid-row: auto;
-    margin: 1rem;
-}
-
-#home-about-photo {
-    float: right;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    border: #2e4a7d solid 2px;
-}
-
 /* About Page */
-
-#about-h2 {
-    font-size: 2.5em;
-    text-align: center;
-}
 
 #about-main p {
     margin: 1rem;
 }
+
+/* Nonfiction Works Page */
