@@ -1,0 +1,258 @@
+/* CLASSES/BASIC TAGS */
+
+body {
+    margin: 0;
+    background-color: #f0ead6;
+}
+
+footer {
+    background-color: #2e4a7d;
+    color: #F0EAD6;
+    
+    bottom: 0;
+    
+    padding: 1rem;
+    text-align: center;
+}
+
+address {
+    font-style: normal;
+    color: #F0EAD6;
+    padding: .5rem;
+}
+
+address a {
+    font-style: normal;
+    color: #F0EAD6;
+    text-decoration: none;
+}
+
+.images {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.heading {
+    background-color: #3a5d9c;
+    color: #F0EAD6;
+    display: grid;
+    place-items: center;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.5rem;
+    min-height: 5rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.heading a {
+    text-decoration: none;
+    color: #F0EAD6;
+}
+
+.top-h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* NAVBAR */
+/* NOTE: My code built upon the code from W3 Schools' navbar tutorial.*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #2e4a7d;
+  display: flex;
+  justify-content: center;
+  min-height: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  font-size: 1.25em;
+  color: #F0EAD6;
+  text-align: center;
+  padding:  1rem 0.75rem;;
+  text-decoration: none;
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.25em;  
+  border: none;
+  outline: none;
+  color: #F0EAD6;
+  padding: 1rem 0.75rem;
+  background-color: #2e4a7d;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 2.5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #3a5d9c;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #F0EAD6;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* HOME PAGE */
+
+#hero-image {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    background-image: url(../../images/hero-image\(1600w\).jpg);
+    background-size: cover;
+    height: 23rem;
+}
+
+#home-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    grid-template-rows: auto;
+}
+
+#home-about {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 1rem;
+}
+
+#home-about-photo {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border: #2e4a7d solid 2px;
+}
+
+#home-work-example {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0.75rem;
+    padding: 1rem;
+    background-color: #d4ddef;
+    border: solid #2e4a7d 2px;
+    border-radius: 2rem;
+    max-height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#home-work-example h2 {
+    text-align: center;
+}
+
+#home-work-example article {
+    display: grid;
+    place-content: center;
+}
+
+@media (max-width: 500px) {
+    
+    #hero-image {
+        background-image: url(../../images/hero-image\(500w\).jpg);
+        height: 20rem;
+    }
+
+    #home-main {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #home-about {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #home-work-example {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #home-heading {
+        text-align: center;
+    }
+
+}
+
+/* ABOUT PAGE */
+
+#about-main p {
+    margin: 1rem;
+}
+
+#about-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* WORKS PAGES */
+
+.works-article {
+    background-color: #d4ddef;
+    border: solid #2e4a7d 2px;
+    padding: 1.3rem;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* EXPERIENCE PAGE */
+
+#experience-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CONTACT PAGE */
+
+#contact-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem;
+}
+
+#contact-email {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    place-items: center;
+}
+
+#contact-linkedin {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    place-items: center;
+}
+
+#contact-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
